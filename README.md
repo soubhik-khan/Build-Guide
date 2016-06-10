@@ -1,5 +1,5 @@
 # Build-Guide
-Building Instruction from scratch
+
 
 to change version name/ date :
 nano vendor/cm/config/common.mk
