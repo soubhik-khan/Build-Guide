@@ -22,9 +22,14 @@ git cherry-pick [sha of commit]
 build steps:
 -----------------------------------
 make clean
+
 repo sync
+
 source build/envsetup.sh
+
 breakfast tomato
+
 make clean
+
 brunch tomato
 
