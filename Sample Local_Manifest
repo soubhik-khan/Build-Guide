@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="http://github.com/" name="gh" revision="master" />
+  <remote fetch="https://github.com/TheMuppets/" name="TheMuppets" revision="cm-11.0" />
+  <project name="TheMuppets/proprietary_vendor_samsung" path="vendor/samsung" remote="gh" revision="cm-11.0" />
+  <project name="TheMuppets/proprietary_vendor_imgtec" path="vendor/imgtec" remote="gh" revision="cm-11.0" />
+  <project name="TheMuppets/proprietary_vendor_broadcom" path="vendor/broadcom" remote="gh" revision="cm-11.0" />
+  <project name="TheMuppets/proprietary_vendor_invensense" path="vendor/invensense" remote="gh" revision="cm-11.0" />
+  <project name="TheMuppets/proprietary_vendor_widevine" path="vendor/widevine" remote="gh" revision="cm-11.0" />
+  <project name="TheMuppets/proprietary_vendor_nxp" path="vendor/nxp" remote="gh" revision="cm-11.0" />
+  <project name="CyanogenMod/android_device_samsung_maguro" path="device/samsung/maguro" remote="github" revision="cm-11.0" />
+  <project name="CyanogenMod/android_device_samsung_toroplus" path="device/samsung/toroplus" remote="github" revision="cm-11.0" />
+  <project name="CyanogenMod/android_device_samsung_toro" path="device/samsung/toro" remote="github" revision="cm-11.0" />
+  <project name="CyanogenMod/android_kernel_samsung_tuna" path="kernel/samsung/tuna" remote="github" revision="cm-11.0" />
+  <project name="CyanogenMod/android_device_samsung_tuna" path="device/samsung/tuna" remote="github" revision="cm-11.0" />
+  <remove-project name="CyanogenMod/android_packages_apps_Dialer" />
+  <project name="cristianomatos/android_packages_apps_Dialer" path="packages/apps/Dialer" remote="github" revision="cm-11" />
+  <remove-project name="CyanogenMod/android_packages_apps_InCallUI" />
+  <project name="cristianomatos/android_packages_apps_InCallUI" path="packages/apps/InCallUI" remote="github" revision="cm-11" />
+  <remove-project name="CyanogenMod/android_packages_services_Telephony" />
+  <project name="cristianomatos/android_packages_services_Telephony" path="packages/services/Telephony" remote="github" revision="cm-11" />
+  <remove-project name="CyanogenMod/android_frameworks_base" />
+  <project name="cristianomatos/android_frameworks_base" path="frameworks/base" remote="github" revision="cm-11" />
+  <remove-project name="CyanogenMod/android_packages_apps_Settings" />
+  <project name="cristianomatos/android_packages_apps_Settings" path="packages/apps/Settings" remote="github" revision="cm-11" />
+</manifest>
