@@ -24,6 +24,7 @@ build steps:
 make clean
 
 repo sync
+
 repo sync -c -f -j8 --force-sync --no-clone-bundle --no-tags
 
 source build/envsetup.sh
