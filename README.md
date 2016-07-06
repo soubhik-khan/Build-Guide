@@ -18,6 +18,8 @@ git fetch upstream [branch name]
 
 git cherry-pick [sha of commit]
 
+cd packages/apps/Profiles && git revert ea4e0f404b36afa8c37829dac0a8aea5b5a1a963 && cd ../../..
+
 
 build steps:
 -----------------------------------
@@ -36,4 +38,15 @@ make clean
 brunch tomato
 
 -------------------------------------------------
-cd packages/apps/Profiles && git revert ea4e0f404b36afa8c37829dac0a8aea5b5a1a963 && cd ../../..
+
+
+sftp://username@[ip address]/home/[username]
+
+TO UPLOAD - go to the out folder
+---------------------------------------
+ftp uploads.androidfilehost.com
+
+ftp basketbuild.com
+
+put [file name.zip]
+
