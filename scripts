@@ -1,0 +1,62 @@
+git remote add upstream https://github.com/soubhik-khan/android_device_yu_tomato.git
+
+git remote -v
+
+cd packages/apps/Profiles && git revert ea4e0f404b36afa8c37829dac0a8aea5b5a1a963 && cd ../../..
+
+git cherry-pick 277573d2be946f2b9176cbd95853c2aa0713a0be^..c785f6c1701c6efdc6bb118625e21342e4f8b369
+277573d2be946f2b9176cbd95853c2aa0713a0be
+6b064f05abe8c39299ca18d1c6dc60348f79e00f
+
+hardware keys - 25ae3948b294f112a1c1831be1cbf6f53de7f63e
+git remote add upstream https://github.com/darshan1205/kernel.git
+
+git clone https://github.com/soubhik-khan/android_kernel_cyanogen_msm8916.git -b staging/cm-13.0-lettuce msm8916
+
+git push --set-upstream https://github.com/soubhik-khan/android_device_yu_tomato.git cm-13.0-f2fs
+
+git clone https://github.com/soubhik-khan/android_device_yu_tomato.git -b cm-13.0 tomato
+git remote add upstream https://github.com/darshan1205/android_device_yu_tomato.git
+git fetch upstream test/[branch name]
+git cherry-pick e40a6bf9671b9276b76d4155f901aeadc7a6a3b5 / [sha of commit]
+
+git checkout -b cm-13.0-f2fs
+git push -u cm-13.0-f2fs
+git push origin cm-13.0-f2fs
+
+git add .
+git commit -m "tomato: build for crdroid"
+git checkout -b crdroid
+git push crdroid
+git push origin crdroid
+git cherry-pick 2414ffd8ceb9c060080b29c35b129dc8e97d8849
+git commit
+git rm overlay/frameworks/base/core/res/res/values/config.xml
+git commit
+git add .
+git commit --amend
+git push origin crdroid
+git cherry-pick 1d56a3eb95118a29f9dc0b09c320c6d2896326d1
+git push origin crdroid
+
+wget https://raw.githubusercontent.com/soubhik-khan/android_device_yu_tomato/154988c81a689de82277a76b8a4f7cf8bcf99c82/overlay/frameworks/base/core/res/res/values/config.xml
+git commit
+git log
+
+cd device/yu/tomato
+git add .
+git commit -m "halogenify"
+git remote add new https://gitlab.com/soubhik-sk83/device_yu_tomato.git
+git checkout -b "xos"
+git push -u new "xos"
+
+
+git clone https://github.com/TheMuppets/proprietary_vendor_yu.git -b cm-13.0 vendor/yu
+git clone https://github.com/CyanogenMod/android_device_yu_tomato.git -b cm-13.0 device/yu/tomato
+git clone https://github.com/CyanogenMod/android_device_cyanogen_msm8916-common.git -b cm-13.0 device/cyanogen/msm8916-common
+git clone https://github.com/CyanogenMod/android_device_qcom_common.git -b cm-13.0 device/qcom/common
+git clone https://github.com/darshan1205/kernel_cyanogen_msm8916_64.git -b staging/cm-13.0-lettuce kernel/cyanogen/msm8916
+
+
+
+
