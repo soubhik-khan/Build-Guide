@@ -1,24 +1,18 @@
-git remote add upstream https://github.com/soubhik-khan/android_device_yu_tomato.git
-
-git remote -v
-
-cd packages/apps/Profiles && git revert ea4e0f404b36afa8c37829dac0a8aea5b5a1a963 && cd ../../..
-
-git cherry-pick 277573d2be946f2b9176cbd95853c2aa0713a0be^..c785f6c1701c6efdc6bb118625e21342e4f8b369
-277573d2be946f2b9176cbd95853c2aa0713a0be
-6b064f05abe8c39299ca18d1c6dc60348f79e00f
-
-hardware keys - 25ae3948b294f112a1c1831be1cbf6f53de7f63e
-git remote add upstream https://github.com/darshan1205/kernel.git
-
-git clone https://github.com/soubhik-khan/android_kernel_cyanogen_msm8916.git -b staging/cm-13.0-lettuce msm8916
-
-git push --set-upstream https://github.com/soubhik-khan/android_device_yu_tomato.git cm-13.0-f2fs
-
-git clone https://github.com/soubhik-khan/android_device_yu_tomato.git -b cm-13.0 tomato
 git remote add upstream https://github.com/darshan1205/android_device_yu_tomato.git
 git fetch upstream test/[branch name]
 git cherry-pick e40a6bf9671b9276b76d4155f901aeadc7a6a3b5 / [sha of commit]
+git cherry-pick 277573d2be946f2b9176cbd95853c2aa0713a0be^..c785f6c1701c6efdc6bb118625e21342e4f8b369
+
+git remote -v
+
+git revert ea4e0f404b36afa8c37829dac0a8aea5b5a1a963
+
+git push --set-upstream https://github.com/soubhik-khan/android_device_yu_tomato.git cm-13.0-f2fs
+
+git clone https://github.com/soubhik-khan/android_kernel_cyanogen_msm8916.git -b staging/cm-13.0-lettuce msm8916
+
+hardware keys - 25ae3948b294f112a1c1831be1cbf6f53de7f63e
+
 
 git checkout -b cm-13.0-f2fs
 git push -u cm-13.0-f2fs
