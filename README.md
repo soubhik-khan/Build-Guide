@@ -50,3 +50,13 @@ ftp basketbuild.com
 
 put [file name.zip]
 
+update java
+---------------------------
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install oracle-java7-installer
+sudo apt-get install oracle-java8-installer
+
+To automatically set up the Java 7 environment variables JAVA_HOME and PATH:
+
+sudo apt-get install oracle-java7-set-default
