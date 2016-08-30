@@ -51,6 +51,10 @@ ftp basketbuild.com
 put [file name.zip]
 
 update java
+-------------------------------------------------
+remove old java
+
+sudo apt-get purge openjdk-\* icedtea-\* icedtea6-\* 
 ---------------------------
 sudo add-apt-repository ppa:webupd8team/java
 
