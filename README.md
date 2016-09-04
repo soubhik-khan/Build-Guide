@@ -55,7 +55,9 @@ update java
 remove old java
 
 sudo apt-get purge openjdk-\* icedtea-\* icedtea6-\* 
+
 ---------------------------oracle------------------------------
+
 sudo add-apt-repository ppa:webupd8team/java
 
 sudo apt-get update
@@ -67,7 +69,9 @@ sudo apt-get install oracle-java8-installer
 To automatically set up the Java 7 environment variables JAVA_HOME and PATH:
 
 sudo apt-get install oracle-java7-set-default
+
 ------------------openjdk--------------------
+
 sudo add-apt-repository ppa:openjdk-r/ppa  
 
 sudo apt-get update   
