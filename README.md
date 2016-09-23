@@ -20,6 +20,7 @@ git cherry-pick [sha of commit]
 
 cd packages/apps/Profiles && git revert ea4e0f404b36afa8c37829dac0a8aea5b5a1a963 && cd ../../..
 
+git remote set-url upstream
 
 build steps:
 -----------------------------------
